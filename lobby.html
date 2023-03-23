@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="lobby.css">
+        <title>Demo videochat</title>
+    </head>
+
+    <body>
+        <form id="joinForm">
+            <input type="text" name="inviteLink" required>
+            <input type="submit" value="Join Room">
+        </form>
+    </body>
+    <script>
+        const form = document.getElementById('joinForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const inviteLink = form.inviteLink.value;
+            window.location = `./index.html?room=${encodeURIComponent(inviteLink)}`;
+        })          
+    </script>
+</html>

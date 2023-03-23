@@ -1,0 +1,47 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+#vids{
+    display: flex;
+    width: 90%;
+    margin: 200px auto;
+    justify-content: space-between;
+}
+.videoplayer{
+    width: 45%;
+    height: 300px;
+    background-color: black;
+}
+#user2{
+    display: none;
+}
+#controls{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap:1em;
+}
+
+.controlContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    background-color: rgba(179,102,249,0.9);
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+}
+.controlContainer img{
+    height: 30px;
+    width: 30px;
+}
+#leaveBtn{
+    background-color: rgba(255,80,30,1);
+    padding: 20px 10px;
+}
